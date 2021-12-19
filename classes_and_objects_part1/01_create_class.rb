@@ -41,6 +41,10 @@ class MyCar
     puts "Let's park this bad boy!"
   end
 
+  # create a nice interface that allows you to accurately describe the action
+  # you want your program to perform
+  # create a method called spray_paint that can be called on an obj and will modify
+  # the color of the car
   def spray_paint(color)
     self.color = color
     puts "Your new #{color} paint job looks great!"
@@ -61,3 +65,4 @@ puts raptor.color
 puts raptor.year
 puts "You painted your car again?"
 raptor.spray_paint('red')
+puts raptor.color
