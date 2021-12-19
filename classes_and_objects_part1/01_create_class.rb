@@ -7,6 +7,11 @@
 # to track the current speed
 
 class MyCar
+  # add an accessor method to MyCar to change and view the color of your car
+  # add an accessor method that allows you to view, not modify, the year of your car
+
+  attr_accessor :color
+  attr_reader :year
 
   def initialize(year, color, model)
     @year = year
@@ -47,3 +52,8 @@ raptor.break(15)
 raptor.current_speed
 raptor.shut_off
 raptor.current_speed
+puts "You painted your car to be the color:"
+raptor.color = 'black'
+puts raptor.color
+# no setter method for year so this won't get changed, unlike color
+puts raptor.year
