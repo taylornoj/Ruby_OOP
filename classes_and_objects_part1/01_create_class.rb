@@ -41,7 +41,10 @@ class MyCar
     puts "Let's park this bad boy!"
   end
 
-
+  def spray_paint(color)
+    self.color = color
+    puts "Your new #{color} paint job looks great!"
+  end
 
 end
 
@@ -52,8 +55,9 @@ raptor.break(15)
 raptor.current_speed
 raptor.shut_off
 raptor.current_speed
-puts "You painted your car to be the color:"
 raptor.color = 'black'
 puts raptor.color
 # no setter method for year so this won't get changed, unlike color
 puts raptor.year
+puts "You painted your car again?"
+raptor.spray_paint('red')
