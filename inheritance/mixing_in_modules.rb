@@ -53,3 +53,16 @@ paws.swim                   # => NoMethodError: undefined method `swim' for #<Ca
 
 # Fish and Dog objects can swim, but objects of other classes won't be able to
 
+
+# so when to use class inheritance vs. mixins?
+  # Things to consider:
+    # you can only subclass (class inheritance) from one class 
+    # you can mix in as many modules (interface inheritance) as you'd like
+
+    # if there's an 'is-a' relationship, class inheritance is usually the correct
+    # choice
+    # if there's a 'has-a' relationship, interface inheritance is generally a better choice
+      # ex. dog "is an" animal and it "has an" ability to swim
+
+    # you cannot instantiate modules (no object can be created from a module)
+    # modules are used only for namespacing and grouping common methods together
