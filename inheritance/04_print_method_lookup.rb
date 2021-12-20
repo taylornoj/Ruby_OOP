@@ -8,8 +8,7 @@ end
 
 class Vehicle  
   attr_accessor :color
-  attr_reader :year
-  attr_reader :model
+  attr_reader :year, :model
 
   @@number_of_vehicles = 0    # 1
 
